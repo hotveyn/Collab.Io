@@ -1,0 +1,172 @@
+$jakarta: "Plus Jakarta Sans", sans-serif;
+@mixin flexNorm($a: space-between, $b: center) {
+	display: flex;
+	justify-content: $a;
+	align-items: $b;
+}
+
+@mixin myWidth($a) {
+	width: 100%;
+	max-width: $a;
+}
+
+.container {
+	margin: 0 auto;
+	@include myWidth(1200px);
+}
+
+main {
+	margin-top: 70px;
+}
+
+.start {
+	@include flexNorm();
+	height: 617px;
+	.start-left {
+		@include flexNorm(space-between, baseline);
+		flex-direction: column;
+		h1 {
+			font-family: $jakarta;
+			font-weight: 400;
+			font-size: 63px;
+			line-height: 79px;
+			@include myWidth(470px);
+		}
+		p {
+			font-family: $jakarta;
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 29px;
+			@include myWidth(495px);
+			letter-spacing: 0.36px;
+		}
+		.start__actions {
+			margin-top: 23px;
+			@include flexNorm(space-between, center);
+			max-width: 455px;
+			width: 100%;
+			a {
+				@include myWidth(240px);
+			}
+			button {
+				width: 100%;
+				height: 59px;
+				background-color: rgba(63, 83, 216, 1);
+				border-radius: 14px;
+				border: 0px solid;
+
+				color: white;
+				font-family: $jakarta;
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 20px;
+			}
+		}
+	}
+}
+
+.tearms {
+	margin-top: 70px;
+	@include flexNorm(space-between, center);
+	flex-direction: column;
+	height: 155px;
+	h2 {
+		font-family: $jakarta;
+		font-weight: 400;
+		font-size: 22px;
+		line-height: 31px;
+	}
+	ul {
+		@include flexNorm(space-beetwen, center);
+		flex-wrap: wrap;
+	}
+}
+
+.features {
+	margin-top: 150px;
+	@include flexNorm(space-beetwen, center);
+	flex-direction: column;
+	h2 {
+		font-family: $jakarta;
+		font-weight: 400;
+		font-size: 43px;
+		line-height: 56px;
+	}
+	p {
+		margin-top: 10px;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 29px;
+	}
+	.features__cards {
+		margin-top: 110px;
+		@include myWidth(1100px);
+		@include flexNorm(space-between, center);
+		flex-wrap: wrap;
+		.features__card {
+			@include myWidth(230px);
+			@include flexNorm(space-berween, center);
+			flex-direction: column;
+			margin-bottom: 150px;
+			img {
+				margin-bottom: 30px;
+			}
+			p {
+				font-family: $jakarta;
+			}
+		}
+	}
+}
+
+.coll-ship-faster {
+	width: 100%;
+	padding: 0 20px;
+	@include flexNorm(space-between);
+	h2 {
+		font-family: $jakarta;
+		@include myWidth(410px);
+		font-weight: 400;
+		font-weight: 400;
+		font-size: 42px;
+		line-height: 56px;
+		letter-spacing: 1.44px;
+	}
+	.coll-ship-faster__info > p {
+		margin-top: 27px;
+		@include myWidth(420px);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 29px;
+		letter-spacing: 0.36px;
+		color: #545479;
+	}
+	.coll-ship-faster__pluses {
+		margin-top: 35px;
+	}
+	.coll-ship-faster__pluses p {
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 29px;
+		letter-spacing: 0.36px;
+		margin-bottom: 20px;
+		margin-left: 35px;
+	}
+	.coll-ship-faster__pluses p:nth-child(2) {
+		font-size: 18px;
+	}
+	button {
+		margin-top: 48px;
+		@include myWidth(174px);
+		border: 0;
+		border-radius: 14px;
+		background-color: #3f53d8;
+		height: 60px;
+
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.4px;
+		color: #ffffff;
+	}
+}

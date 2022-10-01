@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+$jakarta: "Plus Jakarta Sans", sans-serif;
+
+@mixin flexNorm($a: space-between, $b: center) {
+	display: flex;
+	justify-content: $a;
+	align-items: $b;
+}
+a {
+	color: black;
+	text-decoration: none;
+}
+.header {
+	@include flexNorm();
+	max-width: 1300px;
+	margin: auto;
+	margin-top: 30px;
+	ul {
+		@include flexNorm();
+		max-width: 440px;
+		width: 100%;
+		font-family: $jakarta;
+		li {
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 18px;
+		}
+	}
+}
+.buy {
+	@include flexNorm();
+	max-width: 320px;
+	width: 100%;
+	.cart {
+		@include flexNorm(space-between, baseline);
+		max-width: 80px;
+		width: 100%;
+		p {
+			font-family: $jakarta;
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 18px;
+		}
+		p:not(.cart__number)::before {
+			content: url("../img/cart.png");
+			margin-right: 8px;
+		}
+		.cart__number {
+			color: #3f53d8;
+			font-weight: 400;
+			font-size: 12px;
+			line-height: 18px;
+		}
+	}
+	button {
+		max-width: 219px;
+		width: 100%;
+		height: 60px;
+		border: 1px rgba(8, 8, 41, 0.2) solid;
+		background-color: white;
+		border-radius: 10px;
+		font-family: $jakarta;
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 20px;
+		cursor: pointer;
+		transition: 0.2s;
+
+		&:hover {
+			box-shadow: 0 0 10px rgba(63, 83, 216, 1);
+			color: #3f53d8;
+		}
+	}
+}
