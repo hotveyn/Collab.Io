@@ -1,0 +1,53 @@
+$jakarta: "Plus Jakarta Sans", sans-serif;
+@mixin flexNorm($a: space-between, $b: center) {
+	display: flex;
+	justify-content: $a;
+	align-items: $b;
+}
+
+@mixin myWidth($a) {
+	width: 100%;
+	max-width: $a;
+}
+.footer {
+	font-family: $jakarta;
+	padding-bottom: 60px;
+	.container__footer {
+		@include flexNorm();
+		flex-direction: column;
+		.footer__rights {
+			width: 100%;
+			@include flexNorm();
+			margin-top: 53px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+		}
+		.footer__info {
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 29px;
+			width: 100%;
+			@include flexNorm(space-between, start);
+			> div {
+				@include flexNorm(space-between, start);
+				@include myWidth(735px);
+
+				li {
+					margin-bottom: 26px;
+				}
+				.footer__social {
+					width: 100%;
+					margin-top: 26px;
+					@include flexNorm();
+				}
+				.footer__get-in-touch {
+					@include flexNorm(start);
+					img {
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+}

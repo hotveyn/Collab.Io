@@ -2,7 +2,6 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
-  padding-bottom: 180px;
 }
 
 main {
@@ -588,4 +587,51 @@ main {
   font-size: 16px;
   line-height: 18px;
   letter-spacing: 0.36px;
+}
+
+.last-start {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  height: 1000px;
+  margin: 0 auto;
+  background-image: url("../static/img/love.png");
+  background-size: 100%;
+}
+.last-start .last-start__bg {
+  position: absolute;
+  z-index: -1;
+  border-radius: 14px;
+}
+.last-start h2 {
+  width: 100%;
+  max-width: 850px;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 79px;
+  text-align: center;
+  letter-spacing: 2.16px;
+}
+.last-start button {
+  margin-top: 65px;
+  width: 240px;
+  height: 60px;
+  border: 0;
+  border-radius: 14px;
+  background-color: #3f53d8;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #ffffff;
+}
+.last-start .no-credit {
+  position: relative;
+  left: 220px;
+  bottom: 60px;
 }/*# sourceMappingURL=index_main.css.map */
