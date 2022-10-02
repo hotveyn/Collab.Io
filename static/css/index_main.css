@@ -191,6 +191,9 @@ main {
   justify-content: space-between;
   align-items: center;
 }
+.build > img {
+  width: 760px;
+}
 .build h2 {
   font-family: "Plus Jakarta Sans", sans-serif;
   width: 100%;
@@ -333,4 +336,74 @@ main {
   line-height: 29px;
   letter-spacing: 0.36px;
   color: #545479;
+}
+
+.teams-saying {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  margin-top: 200px;
+}
+.teams-saying h2 {
+  width: 100%;
+  max-width: 760px;
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 56px;
+  text-align: center;
+  letter-spacing: 1.44px;
+  color: #080829;
+}
+.teams-saying .teams-saying__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 80px;
+}
+.teams-saying .teams-saying__info .review {
+  width: 100%;
+  max-width: 746px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-direction: column;
+}
+.teams-saying .teams-saying__info .review ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teams-saying .teams-saying__info .review ul img {
+  margin-right: 16px;
+}
+.teams-saying .teams-saying__info .review .review__text {
+  margin-top: 34px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.64px;
+  color: #080829;
+}
+.teams-saying .teams-saying__info .review .review__autor {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 34px;
+  letter-spacing: 0.48px;
+  color: #080829;
+  margin-top: 35px;
+}
+.teams-saying .teams-saying__info .review .review__img {
+  width: 100%;
+  margin-top: 46px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.teams-saying .teams-saying__info .review .review__img .arrowLeft {
+  margin-right: 24px;
 }/*# sourceMappingURL=index_main.css.map */
