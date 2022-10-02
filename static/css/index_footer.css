@@ -34,6 +34,10 @@
   width: 100%;
   max-width: 735px;
 }
+.footer .container__footer .footer__info > div ul {
+  width: 100%;
+  max-width: 200px;
+}
 .footer .container__footer .footer__info > div li {
   margin-bottom: 26px;
 }

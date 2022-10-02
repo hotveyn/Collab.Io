@@ -4,7 +4,6 @@ $jakarta: "Plus Jakarta Sans", sans-serif;
 	justify-content: $a;
 	align-items: $b;
 }
-
 @mixin myWidth($a) {
 	width: 100%;
 	max-width: $a;
@@ -32,7 +31,9 @@ $jakarta: "Plus Jakarta Sans", sans-serif;
 			> div {
 				@include flexNorm(space-between, start);
 				@include myWidth(735px);
-
+				ul {
+					@include myWidth(200px);
+				}
 				li {
 					margin-bottom: 26px;
 				}

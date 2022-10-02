@@ -11,3 +11,10 @@ button:hover {
     background-color: white;
     color: #3f53d8;
 }
+
+li a {
+	transition: 0.1s;
+}
+li a:hover {
+	font-weight: 700;
+}
