@@ -630,7 +630,7 @@ main {
   letter-spacing: 0.4px;
   color: #ffffff;
 }
-.last-start .no-credit {
+.last-start .last-start__no-credit {
   position: relative;
   left: 220px;
   bottom: 60px;
