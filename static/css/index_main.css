@@ -2,6 +2,7 @@
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+  padding-bottom: 180px;
 }
 
 main {
@@ -406,4 +407,185 @@ main {
 }
 .teams-saying .teams-saying__info .review .review__img .arrowLeft {
   margin-right: 24px;
+}
+
+.watch {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.watch .watch__demo {
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.watch .watch__demo p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.watch .watch__stats {
+  width: 100%;
+  max-width: 793px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.watch .watch__stats > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+  max-width: 220px;
+  flex-direction: column;
+}
+.watch .watch__stats .watch__number {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+}
+.watch .watch__stats .watch__blue-plus {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.44px;
+  color: #3f53d8;
+}
+.watch .watch__stats .watch__info {
+  margin-top: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 27px;
+  color: #545479;
+}
+
+.services {
+  margin-top: 130px;
+  widows: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.services h2 {
+  width: 100%;
+  max-width: 580px;
+  font-weight: 400;
+  font-size: 47px;
+  line-height: 56px;
+  text-align: right;
+  letter-spacing: 1.44px;
+}
+.services .services__kinds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 100px;
+  width: 100%;
+}
+.services .services__kinds .services__box-kinds {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .services__kinds .services__box-kinds:nth-child(1) {
+  width: 100%;
+  max-width: 1000px;
+}
+.services .services__kinds .services__box-kinds:nth-child(n+2) {
+  margin-top: 95px;
+  width: 100%;
+  max-width: 1160px;
+}
+.services .services__kinds .services__box-kinds > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 480px;
+}
+.services .services__kinds .services__box-kinds img:nth-child(2n) {
+  position: relative;
+  top: 20px;
+}
+
+.articles {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 140px;
+}
+.articles h2 {
+  font-weight: 400;
+  font-size: 43px;
+  line-height: 56px;
+  letter-spacing: 1.44px;
+}
+.articles > div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 80px;
+}
+.articles .articles__article {
+  width: 100%;
+  max-width: 360px;
+}
+.articles .articles__article .article__named {
+  margin-top: 31px;
+  width: 100%;
+  max-width: 115px;
+  min-height: 34px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.36px;
+  border: 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.articles .articles__article .purple {
+  background-color: rgba(162, 89, 255, 0.3);
+}
+.articles .articles__article .pink {
+  background-color: rgba(250, 91, 104, 0.3);
+}
+.articles .articles__article .blue {
+  background-color: rgb(217, 222, 255);
+}
+.articles .articles__article .articles__info {
+  margin-top: 27px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39px;
+  letter-spacing: 0.52px;
+}
+.articles .articles__article .articles__grey-line {
+  margin-top: 20px;
+  width: 100%;
+  display: block;
+  border-bottom: 2px solid rgba(8, 8, 41, 0.3);
+}
+.articles .articles__article .articles__date-time {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 220px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.36px;
 }/*# sourceMappingURL=index_main.css.map */
