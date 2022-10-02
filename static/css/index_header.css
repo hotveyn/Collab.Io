@@ -72,5 +72,6 @@ a {
 }
 .buy button:hover {
   box-shadow: 0 0 10px rgb(63, 83, 216);
+  background-color: white;
   color: #3f53d8;
 }/*# sourceMappingURL=index_header.css.map */

@@ -170,3 +170,134 @@ main {
 		color: #ffffff;
 	}
 }
+
+.build {
+	width: 100%;
+	padding: 0 20px;
+	@include flexNorm(space-between);
+	h2 {
+		font-family: $jakarta;
+		@include myWidth(410px);
+		font-weight: 400;
+		font-size: 42px;
+		line-height: 56px;
+		letter-spacing: 1.44px;
+	}
+	.build__info > p {
+		margin-top: 27px;
+		@include myWidth(420px);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 29px;
+		letter-spacing: 0.36px;
+		color: #545479;
+	}
+	.build__pluses {
+		margin-top: 45px;
+		@include flexNorm(space-between, center);
+		p {
+			@include myWidth(300px);
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 29px;
+			letter-spacing: 0.36px;
+			margin-left: 24px;
+			&:nth-child(1) {
+				margin-bottom: 15px;
+			}
+		}
+	}
+	button {
+		margin-top: 48px;
+		@include myWidth(174px);
+		border: 0;
+		border-radius: 14px;
+		background-color: #3f53d8;
+		height: 60px;
+
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: 0.4px;
+		color: #ffffff;
+	}
+}
+
+.access {
+	width: 100%;
+	padding: 0 20px;
+	@include flexNorm(space-between, center);
+	.access__info {
+		@include myWidth(430px);
+
+		h2 {
+			font-family: $jakarta;
+			@include myWidth(379px);
+			font-weight: 400;
+			font-size: 45px;
+			line-height: 56px;
+			letter-spacing: 1.44px;
+		}
+		p {
+			margin-top: 26px;
+			@include myWidth(425px);
+			font-weight: 400;
+			font-size: 17px;
+			line-height: 29px;
+			letter-spacing: 0.36px;
+			color: #545479;
+		}
+		.access__grey-line {
+			margin-top: 33px;
+			width: 100%;
+			display: block;
+			border-bottom: 2px solid rgba(8, 8, 41, 0.3);
+		}
+		ul {
+			@include flexNorm(space-between, center);
+			flex-wrap: wrap;
+			img {
+				@include myWidth(126px);
+			}
+		}
+	}
+}
+
+.collab {
+	margin-top: 120px;
+	width: 100%;
+	@include flexNorm(space-between, center);
+	flex-direction: column;
+	h2 {
+		@include myWidth(620px);
+		font-style: normal;
+		font-weight: 400;
+		font-size: 43px;
+		line-height: 56px;
+		letter-spacing: 1.44px;
+		color: #080829;
+	}
+	.collab__cards {
+		margin-top: 80px;
+		width: 100%;
+		@include flexNorm(space-between, center);
+		h3 {
+			margin-top: 40px;
+			font-weight: 400;
+			font-size: 27px;
+			line-height: 34px;
+			letter-spacing: 0.56px;
+			color: #080829;
+		}
+		p {
+			@include myWidth(340px);
+			margin-top: 20px;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 29px;
+			letter-spacing: 0.36px;
+			color: #545479;
+		}
+	}
+}

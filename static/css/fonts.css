@@ -2,3 +2,12 @@
 *{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
+button{
+    cursor: pointer;
+	transition: 0.2s;
+}
+button:hover {
+    box-shadow: 0 0 10px rgba(63, 83, 216, 1);
+    background-color: white;
+    color: #3f53d8;
+}
